@@ -1,0 +1,88 @@
+.header {
+    grid-area: header;
+    background-color: rgba(238, 239, 241, 1);
+    padding: 10px;
+}
+
+.main {
+    grid-area: main;
+}
+
+.picturecontainer {
+    width: 30%;
+}
+
+.computer {
+    width: 100%;
+    max-width: 100%;
+}
+
+.block1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(238, 239, 241, 1);
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.textaboutauthor {
+    grid-area: textaboutauthor;
+    background-color: rgba(52, 84, 122, 1);
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    padding: 5px;
+}
+
+.blockmyskills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.authorsphoto {
+    width: 100%;
+    max-width: 100%;
+}
+
+.photo {
+    width: 40%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgba(52, 84, 122, 1);
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    color: white;
+    padding: 5px;
+}
+
+.footerblock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+}
+
+.container {
+    display: grid;
+    height: 90vh;
+    width: 100vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 1fr 10%;
+    grid-template-areas: "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+.nav-item {
+    padding: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}

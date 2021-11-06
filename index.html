@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .header {
+        background: grey;
+        grid-area: header;
+
+    }
+    .sidebar {
+        background: rgb(110, 167, 124);
+        grid-area: sidebar;
+    }
+    .main {
+        display:grid;
+        background: beige;
+        grid-area: main;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        grid-gap: 10px;
+        padding: 10px;
+
+    }
+    .cell1, .cell2, .cell3 {
+        background: rosybrown;
+        height: 30%;
+
+    }
+    .cell3{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .footer {
+        display: grid;
+        background: grey;
+        grid-area: footer;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        align-items: center;
+
+
+}
+    .section1, .section2, .section3, .section4{
+        background: cornsilk;
+        height: 30%;
+    }
+    .container {
+        display: grid;
+        height: 90vh;
+        grid-template-areas: "header header header header"
+                             "main main main sidebar"
+                             "footer footer footer footer";
+        font-weight: bolder;
+        text-align: center;
+        font-size: 2em;
+        padding: 10px;                    
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Домашка. Неделя 6.</h1>
+    <div class="container">
+        <header class="header">Шапка страницы</header>
+        <aside class="sidebar">Боковая область</aside>
+        <main class="main">
+
+            <div class="cell1">Еще 1</div>
+            <div class="cell2">Еще 2</div>
+            <div class="cell3">Еще 3</div>
+
+        </main>
+        <footer class="footer">
+                <div class="section1">Секция футера1</div>
+                <div class="section2">Секция футера2</div>
+                <div class="section3">Секция футера3</div>
+                <div class="section4">Секция футера4</div>
+
+        </footer>
+    </div>
+
+</body>
+</html>
